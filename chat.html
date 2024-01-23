@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chat IA</title>
+</head>
+
+<body>
+  <h1>Chat IA</h1>
+  
+  <textarea name="" id="area_texto_informacion" cols="100" rows="20" >El iPhone X es un teléfono inteligente de gama alta diseñado, desarrollado y comercializado por Apple Inc. Fue anunciado el 12 de septiembre de 2017 y lanzado el 3 de noviembre de 2017. Es el primer teléfono inteligente de Apple en abandonar el botón de inicio físico, en favor de un sistema de gestos basado en la pantalla. El iPhone X tiene una pantalla OLED de 5,8 pulgadas con resolución de 2436 x 1125 píxeles. La pantalla está rodeada por un marco de acero inoxidable y un borde superior con una muesca que alberga la cámara frontal, los sensores de proximidad y luz ambiental, y el altavoz del oído. El iPhone X está equipado con el chip A11 Bionic de Apple, que tiene seis núcleos de procesamiento. El teléfono también tiene 3 GB de RAM y 64 GB, 256 GB o 512 GB de almacenamiento interno.La cámara trasera del iPhone X tiene dos sensores de 12 megapíxeles, uno con apertura f/1.8 y el otro con apertura f/2.4. La cámara frontal tiene un sensor de 7 megapíxeles con apertura f/2.2. El iPhone X tiene una batería de 2716 mAh que ofrece una duración de batería de hasta 12 horas de reproducción de video. El iPhone X se lanzó en tres colores: plateado, oro y gris espacial. Las principales características del iPhone X son: Pantalla OLED de 5,8 pulgadas. Sin botón de inicio físico. Sistema de gestos basado en la pantalla. Chip A11 Bionic. Cámara trasera de 12 megapíxeles con dos sensores. Cámara frontal de 7 megapíxeles. Batería de 2716 mAh. El iPhone X fue un teléfono revolucionario que marcó el comienzo de una nueva era para los teléfonos inteligentes de Apple. El teléfono fue elogiado por su diseño, rendimiento y cámara. Sin embargo, también fue criticado por su alto precio y por la falta de un botón de inicio físico.. El iPhone X fue un éxito comercial, con más de 70 millones de unidades vendidas en todo el mundo. El teléfono fue seguido por el iPhone XS y el iPhone XS Max en 2018.</textarea>
+  <button type="button" id="guardar_info">Guardar</button>
+
+
+
+
+
+
+  <!-- dddddddddddddddddddddddddddddddddddddddddddddddd -->
+  <div id="chat">
+    <!-- Aquí se mostrarán los mensajes -->
+    <input type="text" id="user-input">
+    <button type="button" id="send">Enviar</button>
+  </div>
+  <div id="chat_registro">
+
+  </div>
+
+  
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+  <script type="module" src="chat_ia.js"></script>
+  <script type="module" src="chat_proceso.js"></script>
+  
+</body>
+
+</html>

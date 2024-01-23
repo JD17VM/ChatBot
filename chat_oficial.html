@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chat personal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' />
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <div class="information-bubble">
+
+    <div class="seccion_informacion">
+      <h3>Nombre del asistente del chatbot: </h3><input type="text" id="" name="" class="area_texto" placeholder="Ingrese el nombre o nombres del asistente Chatbot (Ej. Mario, José , etc)"></textarea>
+      <h3>Mensaje inicial:</h3><input type="text" id="" name="" class="area_texto" placeholder="Ingrese el un texto para el inicio de conversación (Ej. Bienvenido, en que te puedo ayudar)"></textarea>
+      <h3>Información</h3><textarea id="area_texto_informacion" name="" rows="100" cols="50"class="area_texto area_texto_grande" placeholder="Ingrese la información necesaria para el chatbot"></textarea>
+
+      <button type="button" id="guardar_info" class="boton_confi">Guardar</button>
+    </div>
+
+    <div class="bottom-right">
+
+      <div class="chat">
+        <div class="contact bar">
+          <div class="pic stark"></div>
+          <div class="name">Asistente</div>
+        </div>
+
+        <div class="messages" id="chat_registro">
+          <!--
+          <div class="message incoming">Uh, what is </div>
+          <div class="message">Uh, he's from space</div> 
+          <div class="message stark">
+            <div class="typing typing-1"></div><div class="typing typing-2"></div><div class="typing typing-3"></div>
+          </div>
+          -->
+        </div>
+
+        <form class="input">
+          <input placeholder="Escribe tu mensaje aquí" type="text" id="user-input" />
+          <i class="fas fa-paper-plane" id="send"></i>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+  <script type="module" src="/js/chat_ia.js"></script>
+  <script type="module" src="/js/chat_proceso.js"></script>
+
+</body>
+
+</html>
