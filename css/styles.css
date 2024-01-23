@@ -31,6 +31,7 @@ body, html {
 input:focus,
 textarea:focus {
   outline: none;
+  
 }
 
 .information-bubble {
